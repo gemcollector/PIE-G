@@ -10,11 +10,12 @@ dependencies:
   - pip:
     - numpy==1.19.5
     - pillow==6.2.0
-    - termcolor
+    - termcolor==1.1.0
     - imageio
     - imageio-ffmpeg
     - opencv-python
     - xmltodict
     - tqdm
-    - einops
-    - kornia
+    - einops==0.4.1
+    - kornia==0.6.4
+    - glfw==1.12.0

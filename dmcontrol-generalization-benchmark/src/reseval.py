@@ -36,12 +36,10 @@ def evaluate(env, agent, video, num_episodes, eval_mode, adapt=False, seed=0, do
 		done = False
 		episode_reward = 0
 		while not done:
-			obs = obs_to_input(obs)
 			with torch.no_grad():
-				obs = ep_agent['agent'].encoder(obs)
-				stddev = 0.1
-				dist = ep_agent['agent'].actor(obs, stddev)
-				action = (dist.mean).cpu().numpy()[0]
+				action = ep_agent['agent'].act(np.array(obs),
+											int(1e6),
+											eval_mode=True)
 
 			next_obs, reward, done, _ = env.step(action)
 			video.record(env, eval_mode)
