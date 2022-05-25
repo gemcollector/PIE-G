@@ -1,13 +1,10 @@
 # PIE-G
 
-Codebase for NIPS2022: "Pre-Trained Image Encoder for Generalizable Visual
+Codebase for NeurIPS 2022: "Pre-Trained Image Encoder for Generalizable Visual
 Reinforcement Learning"
 
 
-
-## Code Stucture
-
-
+<img src="/figures/cheetah_video_hard_600.gif" width = "200" height = "200"  /><br>
 
 
 
@@ -15,18 +12,14 @@ Reinforcement Learning"
 
 The MuJoCo license and instruction can be found at https://github.com/deepmind/mujoco
 
-The DeepMind Control license and instruction can be found athttps://github.com/deepmind/dm_control
+The DeepMind Control license and instruction can be found at https://github.com/deepmind/dm_control
 
 For training, the dependencies are based on DrQ-v2. You can install them with the following commands:
 
 ```
-conda env create -f resdrqv2/conda.yml
+conda env create -f conda_env.yml
 ```
-
-
-
-
-
+Detailed installation instructions can be found at: https://github.com/facebookresearch/drqv2
 
 
 For generalization testing, we use the DMControl Gneraliztaion Benchmark.  You can run the commands as follows:
@@ -37,18 +30,10 @@ conda env create -f setup/dmcgb.yml
 conda activate dmcgb
 sh setup/install_envs.sh
 ```
+Detailed installation instructions can be found at: https://github.com/nicklashansen/dmcontrol-generalization-benchmark
 
 
 
-## Datasets
-
-The same with prior methods, we choose the Place dataset for data augmentation:
-
-```
-wget http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar
-```
-
-After downloading and extracting the data, add your dataset directory to the `datasets` list in `setup/config.cfg`.
 
 
 
@@ -56,17 +41,15 @@ After downloading and extracting the data, add your dataset directory to the `da
 
 ### Training
 
-resdrqv2 conda environment is served for training, so you should activate this conda env at first:
+`pieg` conda environment is served for training, so you should activate this conda env at first:
 
 ```
 conda activate pieg
-bash script/pieg-train.sh
+bash pieg-train.sh walker_walk 1
 ```
-
-resdrqv2 with augmentation:
-
+load to the `exp_local` file and move the trained model to the test file:
 ```
-bash script/pieg-train.sh
+mv snapshot.pt ~/PIE-G/dmcontrol-generalization-benchmark/logs/walker_walk/pieg/1
 ```
 
 
@@ -74,6 +57,7 @@ bash script/pieg-train.sh
 ### Evaluation
 
 ```
+cd ~/PIEG/dmcontrol-generalization-benchmark/
 conda activate dmcgb
 bash eval/script/pieg.sh 1 video_hard walker walk
 ```
