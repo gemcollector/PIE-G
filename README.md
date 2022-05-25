@@ -3,9 +3,12 @@
 Codebase for NeurIPS 2022: "Pre-Trained Image Encoder for Generalizable Visual
 Reinforcement Learning"
 
-<center class="fourth">
-<img src="/figures/cheetah_video_hard_600.gif" width = "100" height = "100" ><img src="/figures/ball_video_hard_882.gif" width = "100" height = "100"  ><img src="/figures/stand_video_hard_958.gif" width = "100" height = "100"  ><img src="/figures/walk_video_hard_801.gif" width = "100" height = "100"  >
-</center>
+<p align="center">
+    <img src="/figures/cheetah_video_hard_600.gif" width = "100" height = "100" >
+    <img src="/figures/ball_video_hard_882.gif" width = "100" height = "100"  >
+    <img src="/figures/stand_video_hard_958.gif" width = "100" height = "100"  >
+    <img src="/figures/walk_video_hard_801.gif" width = "100" height = "100"  >
+</p>
 
 ## Setup
 
