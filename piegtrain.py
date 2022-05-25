@@ -21,7 +21,6 @@ import utils
 from logger import Logger
 from replay_buffer import ReplayBufferStorage, make_replay_loader
 from video import TrainVideoRecorder, VideoRecorder
-import ostrichrl
 import wandb
 
 torch.backends.cudnn.benchmark = True
