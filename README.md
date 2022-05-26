@@ -6,7 +6,7 @@ Reinforcement Learning"
 Code link: https://anonymous.4open.science/r/PIE-G-A80B/
 
 
-<p align="center">
+<p align="left">
     <img src="https://anonymous.4open.science/r/PIE-G-A80B/figures/ball_video_hard_882.gif" width = "190" height = "190" >
     <img src="https://anonymous.4open.science/r/PIE-G-A80B/figures/cheetah_video_hard_600.gif" width = "190" height = "190"  >
     <img src="https://anonymous.4open.science/r/PIE-G-A80B/figures/stand_video_hard_958.gif" width = "190" height = "190"  >
