@@ -52,7 +52,7 @@ Detailed installation instructions can be found at: https://github.com/nicklasha
 conda activate pieg
 bash pieg-train.sh walker_walk 1
 ```
-load to the `exp_local` file and move the trained model to the test file:
+`cd` to the `exp_local` file and move the trained model to the test file:
 ```
 mv snapshot.pt ~/PIE-G/dmcontrol-generalization-benchmark/logs/walker_walk/pieg/1
 ```
