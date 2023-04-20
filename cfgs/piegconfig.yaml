@@ -30,7 +30,7 @@ use_wandb: true
 experiment: exp
 # agent
 lr: 1e-4
-feature_dim: 50
+feature_dim: 256
 name: pie-g
 
 agent:

@@ -150,11 +150,7 @@ def schedule(schdl, step):
 
 import os
 
-def save_files(work_dir):
-    path = '/home/yzc/drqv2-main'
-    os.system(f'cp {path}/cfgs/resconfig.yaml {work_dir}')
-    os.system(f'cp {path}/resdrqv2.py {work_dir}')
-    os.system(f'cp {path}/svea_resdrqv2.py {work_dir}')
+
 
 import json
 def load_config(key=None):
@@ -182,7 +178,7 @@ def _load_places(batch_size=256, image_size=84, num_workers=8, use_val=False):
 	global places_dataloader, places_iter
 	partition = 'val' if use_val else 'train'
 	print(f'Loading {partition} partition of places365_standard...')
-	for data_dir in utils.load_config('datasets'):
+	for data_dir in load_config('datasets'):
 		if os.path.exists(data_dir):
 			fp = os.path.join(data_dir, 'places365_standard', partition)
 			if not os.path.exists(fp):

@@ -36,7 +36,6 @@ class Workspace:
     def __init__(self, cfg):
         self.work_dir = Path.cwd()
         print(f'workspace: {self.work_dir}')
-        utils.save_files(self.work_dir)  # save code files
 
         self.cfg = cfg
         utils.set_seed_everywhere(cfg.seed)
