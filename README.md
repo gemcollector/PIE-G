@@ -36,6 +36,13 @@ conda env create -f setup/dmcgb.yml
 conda activate dmcgb
 sh setup/install_envs.sh
 ```
+
+The place365 dataset can be downloaded by running:
+```
+wget http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar
+```
+After downloading and extracting the data, add your dataset directory to the `config.cfg`. 
+
 Detailed installation instructions can be found at: https://github.com/nicklashansen/dmcontrol-generalization-benchmark
 
 
