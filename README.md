@@ -16,7 +16,7 @@ Code link: https://anonymous.4open.science/r/PIE-G-A80B/
 
 ## Setup
 
-The MuJoCo license and instruction can be found at https://github.com/deepmind/mujoco
+The MuJoCo license and instruction can be found at https://github.com/deepmind/mujoco;The Mujoco Version should be `2.1.1` for training.
 
 The DeepMind Control license and instruction can be found at https://github.com/deepmind/dm_control
 
@@ -28,7 +28,7 @@ conda env create -f conda_env.yml
 Detailed installation instructions can be found at: https://github.com/facebookresearch/drqv2
 
 
-For generalization testing, we use the DMControl Gneraliztaion Benchmark.  You can run the commands as follows:
+For generalization testing, we use the DMControl Gneralization Benchmark.  You can run the commands as follows:
 
 ```
 cd dmcontrol-generalization-benchmark/
