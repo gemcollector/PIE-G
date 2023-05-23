@@ -10,7 +10,6 @@ from torchvision.models import resnet18, resnet34, resnet50
 import torchvision
 from torchvision import transforms
 import utils
-from utils import random_overlay
 
 
 
