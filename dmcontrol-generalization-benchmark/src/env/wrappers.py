@@ -299,7 +299,7 @@ class VideoWrapper(gym.Wrapper):
 		self._max_episode_steps = env._max_episode_steps
 
 	def _get_video_paths(self):
-		video_dir = os.path.join('/home/yzc/dmcontrol-generalization-benchmark/src/env/data', self._mode)
+		video_dir = os.path.join('src/env/data', self._mode)
 		if 'video_easy' in self._mode:
 			self._video_paths = [os.path.join(video_dir, f'video{i}.mp4') for i in range(10)]
 		elif 'video_hard' in self._mode:
