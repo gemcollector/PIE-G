@@ -3,7 +3,6 @@
 Codebase for NeurIPS 2022: "Pre-Trained Image Encoder for Generalizable Visual
 Reinforcement Learning"
 
-Code link: https://anonymous.4open.science/r/PIE-G-A80B/
 
 
 <p align="left">
