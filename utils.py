@@ -154,7 +154,7 @@ import os
 
 import json
 def load_config(key=None):
-	path = os.path.join('/home/yzc/drqv2-main/cfgs', 'config.cfg')
+	path = os.path.join('TO/YOUR/PATH', 'config.cfg')
 	with open(path) as f:
 		data = json.load(f)
 	if key is not None:
