@@ -57,7 +57,7 @@ Detailed installation instructions can be found at: https://github.com/nicklasha
 
 ```
 conda activate pieg
-bash pieg-train.sh task=walker_walk seed=1
+bash pieg_train.sh task=walker_walk seed=1
 ```
 `cd` to the `exp_local` file and move the trained model to the test file:
 ```
