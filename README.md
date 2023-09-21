@@ -71,7 +71,7 @@ mv snapshot.pt ~/PIE-G/dmcontrol-generalization-benchmark/logs/walker_walk/pieg/
 ```
 cd ~/PIEG/dmcontrol-generalization-benchmark/
 conda activate dmcgb
-bash eval/script/pieg.sh 1 video_hard walker walk
+bash script/eval/pieg.sh 1 video_hard walker walk
 ```
 
 
